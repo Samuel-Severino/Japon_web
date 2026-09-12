@@ -1,0 +1,977 @@
+/* =========================================================
+   SITIOS Y CULTURA
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --sites-black: #111111;
+
+    --sites-dark: #181818;
+
+    --sites-white: #ffffff;
+
+    --sites-gray: #666666;
+
+    --sites-light: #f7f7f5;
+
+    --sites-border: #e3e3e0;
+
+    --sites-red: #c62828;
+
+    --sites-red-dark: #a91f1f;
+
+    --sites-font:
+        "Noto Sans JP",
+        sans-serif;
+
+    --sites-display:
+        "Playfair Display",
+        serif;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+
+    margin: 0;
+
+    background: var(--sites-light);
+
+    color: var(--sites-black);
+
+    font-family: var(--sites-font);
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+
+.sites-page {
+
+    width: 100%;
+
+    padding-top: 78px;
+}
+
+
+/* =========================================================
+   INTRODUCCIÓN
+========================================================= */
+
+.sites-intro {
+
+    width: 100%;
+
+    background: var(--sites-white);
+
+    padding:
+        100px
+        30px
+        90px;
+}
+
+
+.sites-intro-content {
+
+    width: min(900px, 100%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   KICKER
+========================================================= */
+
+.section-kicker {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: var(--sites-red);
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.30em;
+}
+
+
+/* =========================================================
+   TITULO
+========================================================= */
+
+.sites-intro h1 {
+
+    margin: 0;
+
+    font-family: var(--sites-display);
+
+    font-size: clamp(
+        2.7rem,
+        6vw,
+        5rem
+    );
+
+    line-height: 1.1;
+
+    font-weight: 600;
+
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   LINEA
+========================================================= */
+
+.section-line {
+
+    width: 55px;
+
+    height: 2px;
+
+    margin: 30px auto 35px;
+
+    background: var(--sites-red);
+}
+
+
+/* =========================================================
+   PÁRRAFOS
+========================================================= */
+
+.sites-intro p {
+
+    max-width: 800px;
+
+    margin:
+        0
+        auto
+        18px;
+
+    color: var(--sites-gray);
+
+    font-size: 0.98rem;
+
+    line-height: 1.9;
+
+    font-weight: 300;
+}
+
+
+.sites-intro .intro-lead {
+
+    color: var(--sites-black);
+
+    font-size: 1.12rem;
+
+    line-height: 1.9;
+
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   FILTRO
+========================================================= */
+
+.places-filter {
+
+    width: 100%;
+
+    padding:
+        75px
+        30px
+        65px;
+
+    background:
+        #eeeeeb;
+
+    border-top:
+        1px solid var(--sites-border);
+
+    border-bottom:
+        1px solid var(--sites-border);
+}
+
+
+.filter-header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.filter-kicker {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--sites-red);
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.28em;
+}
+
+
+.filter-header h2 {
+
+    margin: 0 0 10px;
+
+    font-family: var(--sites-display);
+
+    font-size: 2.3rem;
+
+    font-weight: 600;
+}
+
+
+.filter-header p {
+
+    margin: 0;
+
+    color: var(--sites-gray);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.filter-buttons {
+
+    width: min(1100px, 100%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+
+.place-button {
+
+    position: relative;
+
+    min-height: 64px;
+
+    padding:
+        12px
+        14px;
+
+    border:
+        1px solid
+        #d5d5d1;
+
+    background: var(--sites-white);
+
+    color: var(--sites-black);
+
+    font-family: var(--sites-font);
+
+    font-size: 0.82rem;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.place-button span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #999999;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.1em;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.place-button:hover {
+
+    border-color: var(--sites-black);
+
+    transform: translateY(-2px);
+}
+
+
+.place-button.active {
+
+    background: var(--sites-black);
+
+    border-color: var(--sites-black);
+
+    color: var(--sites-white);
+}
+
+
+.place-button.active span {
+
+    color: #bbbbbb;
+}
+
+
+/* =========================================================
+   MENSAJE DE SELECCIÓN
+========================================================= */
+
+.selection-message {
+
+    min-height: 380px;
+
+    padding:
+        80px
+        25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: var(--sites-white);
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.selection-symbol {
+
+    margin-bottom: 25px;
+
+    color: #ddddda;
+
+    font-size: 3rem;
+
+    font-family: var(--sites-font);
+}
+
+
+.selection-message h2 {
+
+    margin: 0 0 12px;
+
+    font-family: var(--sites-display);
+
+    font-size: 2rem;
+
+    font-weight: 600;
+}
+
+
+.selection-message p {
+
+    max-width: 480px;
+
+    margin: 0;
+
+    color: var(--sites-gray);
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SECCIÓN DEL LUGAR
+========================================================= */
+
+.place-section {
+
+    width: 100%;
+
+    background: var(--sites-white);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(380px, 0.9fr)
+        minmax(500px, 1.1fr);
+
+    min-height: 700px;
+
+    animation:
+        placeAppear 0.55s ease;
+}
+
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+.place-image {
+
+    position: relative;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    background: #222222;
+}
+
+
+.place-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 650px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+.place-section:hover
+.place-image img {
+
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   NUMERO
+========================================================= */
+
+.place-number {
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 30px;
+
+    padding:
+        8px
+        12px;
+
+    color: var(--sites-white);
+
+    background:
+        rgba(0, 0, 0, 0.55);
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.15em;
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.place-content {
+
+    padding:
+        80px
+        clamp(40px, 7vw, 100px);
+
+    align-self: center;
+}
+
+
+/* =========================================================
+   KICKER LUGAR
+========================================================= */
+
+.place-kicker {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--sites-red);
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.20em;
+}
+
+
+/* =========================================================
+   TITULO DEL LUGAR
+========================================================= */
+
+.place-content h2 {
+
+    margin: 0;
+
+    font-family: var(--sites-display);
+
+    font-size: clamp(
+        3rem,
+        5vw,
+        5rem
+    );
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   LEAD
+========================================================= */
+
+.place-lead {
+
+    margin:
+        20px
+        0
+        30px;
+
+    color: var(--sites-red);
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PÁRRAFOS
+========================================================= */
+
+.place-content > p:not(.place-lead) {
+
+    color: var(--sites-gray);
+
+    font-size: 0.92rem;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   DETALLES
+========================================================= */
+
+.place-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 0;
+
+    margin-top: 40px;
+
+    border-top:
+        1px solid var(--sites-border);
+
+    border-left:
+        1px solid var(--sites-border);
+}
+
+
+.place-details article {
+
+    padding:
+        22px;
+
+    border-right:
+        1px solid var(--sites-border);
+
+    border-bottom:
+        1px solid var(--sites-border);
+}
+
+
+.place-details h3 {
+
+    margin:
+        0
+        0
+        9px;
+
+    font-family: var(--sites-display);
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+}
+
+
+.place-details p {
+
+    margin: 0;
+
+    color: var(--sites-gray);
+
+    font-size: 0.78rem;
+
+    line-height: 1.75;
+
+    font-weight: 300;
+}
+
+
+/* =========================================================
+   CAJA CULTURAL
+========================================================= */
+
+.culture-box {
+
+    margin-top: 35px;
+
+    padding:
+        25px
+        28px;
+
+    border-left:
+        3px solid
+        var(--sites-red);
+
+    background:
+        #f6f6f3;
+}
+
+
+.culture-box h3 {
+
+    margin:
+        0
+        0
+        10px;
+
+    font-family: var(--sites-display);
+
+    font-size: 1.2rem;
+}
+
+
+.culture-box p {
+
+    margin: 0;
+
+    color: var(--sites-gray);
+
+    font-size: 0.82rem;
+
+    line-height: 1.8;
+
+    font-weight: 300;
+}
+
+
+/* =========================================================
+   ANIMACIÓN
+========================================================= */
+
+@keyframes placeAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .filter-buttons {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    .place-section {
+
+        grid-template-columns:
+            1fr;
+
+        min-height: auto;
+    }
+
+
+    .place-image {
+
+        min-height: 500px;
+    }
+
+
+    .place-image img {
+
+        min-height: 500px;
+    }
+
+
+    .place-content {
+
+        padding:
+            70px
+            8%;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MÓVIL
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .sites-page {
+
+        padding-top: 70px;
+    }
+
+
+    .sites-intro {
+
+        padding:
+            70px
+            20px
+            65px;
+    }
+
+
+    .sites-intro h1 {
+
+        font-size: 2.8rem;
+    }
+
+
+    .sites-intro p {
+
+        font-size: 0.88rem;
+
+        line-height: 1.8;
+    }
+
+
+    .sites-intro .intro-lead {
+
+        font-size: 1rem;
+    }
+
+
+    .places-filter {
+
+        padding:
+            55px
+            20px;
+    }
+
+
+    .filter-header h2 {
+
+        font-size: 1.9rem;
+    }
+
+
+    .filter-buttons {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+
+    .place-button {
+
+        min-height: 60px;
+
+        font-size: 0.75rem;
+
+        padding: 10px;
+    }
+
+
+    .selection-message {
+
+        min-height: 320px;
+
+        padding: 60px 20px;
+    }
+
+
+    .place-image {
+
+        min-height: 350px;
+    }
+
+
+    .place-image img {
+
+        min-height: 350px;
+    }
+
+
+    .place-number {
+
+        top: 20px;
+
+        left: 20px;
+    }
+
+
+    .place-content {
+
+        padding:
+            55px
+            20px;
+    }
+
+
+    .place-content h2 {
+
+        font-size: 3.3rem;
+    }
+
+
+    .place-details {
+
+        grid-template-columns:
+            1fr;
+
+        margin-top: 30px;
+    }
+
+
+    .place-details article {
+
+        padding: 20px;
+    }
+
+
+    .culture-box {
+
+        padding:
+            20px;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVILES MUY PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .filter-buttons {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .place-content h2 {
+
+        font-size: 2.8rem;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .place-section,
+    .place-image img,
+    .place-button {
+
+        animation: none;
+
+        transition: none;
+    }
+
+}

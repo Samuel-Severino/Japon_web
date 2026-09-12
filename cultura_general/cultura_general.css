@@ -1,0 +1,1264 @@
+/* =========================================================
+   CULTURA_GENERAL.CSS
+   Cultura general de Japón
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --culture-black: #151515;
+    --culture-dark: #222222;
+    --culture-gray: #666666;
+
+    --culture-light: #f6f5f2;
+    --culture-white: #ffffff;
+
+    --culture-border: #dedcd7;
+
+    --culture-font:
+        "Noto Sans JP",
+        sans-serif;
+
+    --culture-display:
+        "Playfair Display",
+        serif;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    background:
+        var(--culture-white);
+
+    color:
+        var(--culture-black);
+
+    font-family:
+        var(--culture-font);
+
+    line-height: 1.8;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.culture-page {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.culture-hero {
+
+    min-height: 78vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        150px
+        30px
+        120px;
+
+    background:
+        var(--culture-light);
+
+}
+
+
+.culture-hero-content {
+
+    width:
+        min(900px, 100%);
+
+    margin:
+        0 auto;
+
+    text-align:
+        center;
+
+}
+
+
+.culture-kicker {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        22px;
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.28em;
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+.culture-hero h1 {
+
+    margin:
+        0;
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        clamp(3rem, 7vw, 6rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        1.05;
+
+}
+
+
+.culture-line {
+
+    width:
+        60px;
+
+    height:
+        1px;
+
+    margin:
+        35px auto;
+
+    background:
+        var(--culture-black);
+
+}
+
+
+.culture-hero p {
+
+    max-width:
+        760px;
+
+    margin:
+        0 auto 20px;
+
+    color:
+        var(--culture-gray);
+
+    font-size:
+        1rem;
+
+}
+
+
+.culture-hero .hero-lead {
+
+    font-size:
+        1.15rem;
+
+    color:
+        var(--culture-dark);
+
+}
+
+
+/* =========================================================
+   SECCIONES PRINCIPALES
+========================================================= */
+
+.culture-section {
+
+    width:
+        min(1200px, calc(100% - 60px));
+
+    min-height:
+        700px;
+
+    margin:
+        0 auto;
+
+    padding:
+        120px 0;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap:
+        90px;
+
+    align-items:
+        center;
+
+}
+
+
+/* =========================================================
+   ALTERNAR POSICIONES
+========================================================= */
+
+.culture-section.reverse {
+
+    grid-template-areas:
+        "content image";
+
+}
+
+
+.culture-section:not(.reverse) {
+
+    grid-template-areas:
+        "image content";
+
+}
+
+
+.culture-section .culture-image {
+    grid-area:
+        image;
+}
+
+
+.culture-section .culture-content {
+    grid-area:
+        content;
+}
+
+
+/* =========================================================
+   IMÁGENES
+========================================================= */
+
+.culture-image {
+
+    position:
+        relative;
+
+    height:
+        600px;
+
+    
+
+}
+
+
+.culture-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+
+    transition:
+        transform 0.8s ease;
+
+}
+
+
+.culture-image:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.section-number {
+
+    position:
+        absolute;
+
+    left:
+        25px;
+
+    bottom:
+        25px;
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    font-size:
+        0.75rem;
+
+    font-weight:
+        600;
+
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.culture-content {
+
+    max-width:
+        560px;
+
+}
+
+
+.section-label {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        20px;
+
+    font-size:
+        0.7rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.25em;
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+.culture-content h2 {
+
+    margin:
+        0 0 25px;
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        clamp(2.2rem, 4vw, 4rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        1.15;
+
+}
+
+
+.section-lead {
+
+    font-size:
+        1.15rem;
+
+    color:
+        var(--culture-dark);
+
+}
+
+
+.culture-content p {
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+.culture-content strong {
+
+    color:
+        var(--culture-black);
+
+}
+
+
+/* =========================================================
+   TARJETAS DE IDIOMA
+========================================================= */
+
+.culture-cards {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.culture-cards article {
+
+    padding:
+        22px;
+
+    border:
+        1px solid var(--culture-border);
+
+}
+
+
+.culture-cards span {
+
+    display:
+        block;
+
+    margin-bottom:
+        12px;
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.culture-cards h3 {
+
+    margin:
+        0 0 8px;
+
+    font-size:
+        0.9rem;
+
+}
+
+
+.culture-cards p {
+
+    margin:
+        0;
+
+    font-size:
+        0.8rem;
+
+    line-height:
+        1.6;
+
+}
+
+
+/* =========================================================
+   QUOTE BOX
+========================================================= */
+
+.quote-box {
+
+    margin-top:
+        35px;
+
+    padding:
+        30px;
+
+    border-left:
+        2px solid var(--culture-black);
+
+    background:
+        var(--culture-light);
+
+}
+
+
+.quote-box span {
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        1.8rem;
+
+}
+
+
+.quote-box p {
+
+    margin:
+        10px 0 0;
+
+}
+
+
+/* =========================================================
+   SECCIÓN ANCHA
+========================================================= */
+
+.culture-wide {
+
+    position:
+        relative;
+
+    min-height:
+        720px;
+
+    padding:
+        120px 8%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    background:
+        var(--culture-light);
+
+}
+
+
+.wide-image {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+}
+
+
+.wide-image::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.95),
+            rgba(255,255,255,0.65),
+            rgba(255,255,255,0.15)
+        );
+
+}
+
+
+.wide-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+}
+
+
+.wide-content {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    width:
+        min(600px, 100%);
+
+}
+
+
+.wide-content h2 {
+
+    margin:
+        0 0 25px;
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        clamp(2.5rem, 5vw, 5rem);
+
+    line-height:
+        1.1;
+
+}
+
+
+.wide-content p {
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+/* =========================================================
+   GASTRONOMÍA
+========================================================= */
+
+.food-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        10px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.food-grid article {
+
+    padding:
+        20px;
+
+    background:
+        var(--culture-light);
+
+}
+
+
+.food-grid h3 {
+
+    margin:
+        0 0 8px;
+
+    font-size:
+        0.95rem;
+
+}
+
+
+.food-grid p {
+
+    margin:
+        0;
+
+    font-size:
+        0.8rem;
+
+}
+
+
+/* =========================================================
+   ESTÉTICA
+========================================================= */
+
+.aesthetic-box {
+
+    margin-top:
+        35px;
+
+    padding:
+        30px;
+
+    background:
+        var(--culture-black);
+
+    color:
+        var(--culture-white);
+
+}
+
+
+.aesthetic-box span {
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        2rem;
+
+}
+
+
+.aesthetic-box h3 {
+
+    margin:
+        10px 0;
+
+}
+
+
+.aesthetic-box p {
+
+    margin:
+        0;
+
+    color:
+        #cccccc;
+
+}
+
+
+/* =========================================================
+   ARTES
+========================================================= */
+
+.arts-list {
+
+    margin-top:
+        35px;
+
+    border-top:
+        1px solid var(--culture-border);
+
+}
+
+
+.arts-list article {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    padding:
+        20px 0;
+
+    border-bottom:
+        1px solid var(--culture-border);
+
+}
+
+
+.arts-list article > span {
+
+    min-width:
+        70px;
+
+    font-size:
+        1.3rem;
+
+}
+
+
+.arts-list h3 {
+
+    margin:
+        0;
+
+    font-size:
+        0.9rem;
+
+}
+
+
+.arts-list p {
+
+    margin:
+        2px 0 0;
+
+    font-size:
+        0.8rem;
+
+}
+
+
+/* =========================================================
+   ESTACIONES
+========================================================= */
+
+.season-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        8px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.season-grid div {
+
+    padding:
+        20px 10px;
+
+    text-align:
+        center;
+
+    border:
+        1px solid var(--culture-border);
+
+}
+
+
+.season-grid span {
+
+    display:
+        block;
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        1.7rem;
+
+}
+
+
+.season-grid strong {
+
+    display:
+        block;
+
+    font-size:
+        0.8rem;
+
+}
+
+
+.season-grid small {
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+/* =========================================================
+   ARQUITECTURA
+========================================================= */
+
+.architecture {
+
+    background:
+        var(--culture-black);
+
+    color:
+        var(--culture-white);
+
+}
+
+
+.architecture .wide-content {
+
+    width:
+        50%;
+
+}
+
+
+.architecture .wide-content p {
+
+    color:
+        #bdbdbd;
+
+}
+
+
+.architecture-details {
+
+    width:
+        45%;
+
+    margin-left:
+        auto;
+
+    display:
+        grid;
+
+    gap:
+        15px;
+
+}
+
+
+.architecture-details div {
+
+    padding:
+        30px;
+
+    border:
+        1px solid rgba(255,255,255,0.2);
+
+}
+
+
+.architecture-details span {
+
+    font-size:
+        0.7rem;
+
+    opacity:
+        0.6;
+
+}
+
+
+.architecture-details h3 {
+
+    margin:
+        8px 0;
+
+}
+
+
+.architecture-details p {
+
+    margin:
+        0;
+
+    color:
+        #aaa;
+
+    font-size:
+        0.85rem;
+
+}
+
+
+/* =========================================================
+   CULTURA POP
+========================================================= */
+
+.pop-culture {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.pop-culture span {
+
+    padding:
+        10px 18px;
+
+    border:
+        1px solid var(--culture-border);
+
+    font-size:
+        0.8rem;
+
+}
+
+
+/* =========================================================
+   CIERRE
+========================================================= */
+
+.culture-ending {
+
+    padding:
+        150px 30px;
+
+    text-align:
+        center;
+
+    background:
+        var(--culture-light);
+
+}
+
+
+.culture-ending > div {
+
+    width:
+        min(800px, 100%);
+
+    margin:
+        0 auto;
+
+}
+
+
+.culture-ending h2 {
+
+    margin:
+        0 0 30px;
+
+    font-family:
+        var(--culture-display);
+
+    font-size:
+        clamp(2.5rem, 5vw, 5rem);
+
+    line-height:
+        1.1;
+
+}
+
+
+.culture-ending p {
+
+    color:
+        var(--culture-gray);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .culture-section {
+
+        width:
+            min(700px, calc(100% - 40px));
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            45px;
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .culture-section.reverse {
+
+        grid-template-areas:
+            "image"
+            "content";
+
+    }
+
+
+    .culture-section:not(.reverse) {
+
+        grid-template-areas:
+            "image"
+            "content";
+
+    }
+
+
+    .culture-image {
+
+        height:
+            500px;
+
+    }
+
+
+    .culture-content {
+
+        max-width:
+            none;
+
+    }
+
+
+    .culture-cards {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .culture-wide {
+
+        min-height:
+            auto;
+
+        padding:
+            90px 30px;
+
+    }
+
+
+    .wide-image {
+
+        position:
+            relative;
+
+        height:
+            400px;
+
+        margin:
+            -90px -30px 60px;
+
+    }
+
+
+    .wide-image::after {
+
+        display:
+            none;
+
+    }
+
+
+    .wide-content {
+
+        width:
+            100%;
+
+    }
+
+
+    .architecture {
+
+        display:
+            block;
+
+    }
+
+
+    .architecture .wide-content {
+
+        width:
+            100%;
+
+    }
+
+
+    .architecture-details {
+
+        width:
+            100%;
+
+        margin-top:
+            50px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .culture-hero {
+
+        padding:
+            120px 20px 80px;
+
+    }
+
+
+    .culture-section {
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+
+    .culture-image {
+
+        height:
+            400px;
+
+    }
+
+
+    .food-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .season-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .culture-ending {
+
+        padding:
+            100px 20px;
+
+    }
+
+}

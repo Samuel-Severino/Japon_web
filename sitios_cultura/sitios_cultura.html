@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Descubre los lugares más populares de Japón, su historia, cultura, gastronomía, arquitectura y tradiciones."
+    >
+
+    <title>Lugares Populares de Japón | Japón</title>
+
+
+    <!-- =====================================================
+         FUENTES
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         ESTILOS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="sitios_cultura.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../components/components.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <header id="navbar"></header>
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="sites-page">
+
+
+        <!-- =================================================
+             INTRODUCCIÓN
+        ================================================== -->
+
+        <section class="sites-intro">
+
+            <div class="sites-intro-content">
+
+                <span class="section-kicker">
+                    日本を旅する
+                </span>
+
+                <h1>
+                    Lugares Populares de Japón
+                </h1>
+
+                <div class="section-line"></div>
+
+
+                <p class="intro-lead">
+                    Japón es un país de contrastes donde las grandes
+                    ciudades modernas conviven con templos antiguos,
+                    santuarios, pueblos tradicionales, montañas sagradas,
+                    bosques, islas y paisajes naturales únicos.
+                </p>
+
+
+                <p>
+                    Cada región del país posee una identidad propia.
+                    Tokio representa la modernidad y la tecnología;
+                    Kioto conserva una de las mayores expresiones de la
+                    tradición japonesa; Osaka destaca por su gastronomía
+                    y ambiente urbano; mientras que Nara permite conocer
+                    las raíces históricas y religiosas del país.
+                </p>
+
+
+                <p>
+                    Otros lugares muestran diferentes dimensiones de Japón:
+                    el Monte Fuji representa la relación entre naturaleza,
+                    espiritualidad y arte; Hiroshima conserva la memoria
+                    histórica y un mensaje de paz; Miyajima combina
+                    espiritualidad y paisaje; Hokkaido destaca por sus
+                    grandes espacios naturales; Okinawa conserva la herencia
+                    del antiguo Reino de Ryukyu; y Shirakawa-go representa
+                    el Japón rural y tradicional.
+                </p>
+
+
+                <p>
+                    En esta sección puedes explorar diez de los destinos
+                    más representativos de Japón. Selecciona un lugar para
+                    conocer su historia, arquitectura, cultura, gastronomía,
+                    naturaleza y aquello que lo hace único dentro del país.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FILTRO / DESTINOS
+        ================================================== -->
+
+        <section
+            class="places-filter"
+            aria-label="Seleccionar lugar"
+        >
+
+            <div class="filter-header">
+
+                <span class="filter-kicker">
+                    DESTINOS
+                </span>
+
+                <h2>
+                    Explora Japón
+                </h2>
+
+                <p>
+                    Selecciona un destino para conocerlo.
+                </p>
+
+            </div>
+
+
+            <div class="filter-buttons">
+
+                <button
+                    class="place-button"
+                    data-place="tokio"
+                    type="button"
+                >
+                    <span>01</span>
+                    Tokio
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="kioto"
+                    type="button"
+                >
+                    <span>02</span>
+                    Kioto
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="osaka"
+                    type="button"
+                >
+                    <span>03</span>
+                    Osaka
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="nara"
+                    type="button"
+                >
+                    <span>04</span>
+                    Nara
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="fuji"
+                    type="button"
+                >
+                    <span>05</span>
+                    Monte Fuji
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="hiroshima"
+                    type="button"
+                >
+                    <span>06</span>
+                    Hiroshima
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="miyajima"
+                    type="button"
+                >
+                    <span>07</span>
+                    Miyajima
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="hokkaido"
+                    type="button"
+                >
+                    <span>08</span>
+                    Hokkaido
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="okinawa"
+                    type="button"
+                >
+                    <span>09</span>
+                    Okinawa
+                </button>
+
+
+                <button
+                    class="place-button"
+                    data-place="shirakawa"
+                    type="button"
+                >
+                    <span>10</span>
+                    Shirakawa-go
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MENSAJE INICIAL
+        ================================================== -->
+
+        <section
+            class="selection-message"
+            id="selectionMessage"
+        >
+
+            <div class="selection-symbol">
+                日本
+            </div>
+
+            <h2>
+                Selecciona un destino
+            </h2>
+
+            <p>
+                Elige uno de los lugares anteriores para comenzar
+                a descubrir su historia y cultura.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TOKIO
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="tokio"
+            data-place-content="tokio"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <!-- CAMBIA ESTA RUTA POR TU IMAGEN -->
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibuya%20crossing.jpg"
+                    alt="Shibuya, Tokio, Japón"
+                >
+
+                <span class="place-number">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    東京 — TŌKYŌ
+                </span>
+
+                <h2>
+                    Tokio
+                </h2>
+
+                <p class="place-lead">
+                    El Japón moderno, tecnológico y urbano.
+                </p>
+
+
+                <p>
+                    Tokio es la capital de Japón y una de las grandes
+                    metrópolis del mundo. Es uno de los mejores lugares
+                    para observar el contraste entre la modernidad japonesa
+                    y las tradiciones que han sobrevivido durante siglos.
+                </p>
+
+                <p>
+                    En una misma ciudad es posible encontrar enormes
+                    rascacielos, trenes de alta velocidad, tecnología,
+                    videojuegos y cultura pop junto a templos budistas,
+                    santuarios sintoístas, jardines tradicionales y
+                    pequeños barrios históricos.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Shibuya</h3>
+
+                        <p>
+                            Famoso por su enorme cruce peatonal, sus
+                            pantallas, tiendas, restaurantes y cultura
+                            juvenil. Representa la energía del Tokio
+                            contemporáneo.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Asakusa</h3>
+
+                        <p>
+                            Una de las zonas históricas más conocidas.
+                            Su principal símbolo es Sensō-ji, uno de los
+                            templos budistas más importantes de Tokio.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Akihabara</h3>
+
+                        <p>
+                            Centro mundial de la cultura relacionada con
+                            anime, manga, videojuegos, electrónica y cultura
+                            otaku.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Shinjuku</h3>
+
+                        <p>
+                            Una enorme zona urbana caracterizada por
+                            edificios, oficinas, restaurantes, tiendas,
+                            hoteles y una intensa vida nocturna.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        Cultura de Tokio
+                    </h3>
+
+                    <p>
+                        Tokio representa la modernidad japonesa: tecnología,
+                        transporte, economía, moda, gastronomía, entretenimiento
+                        y cultura popular conviven con templos y tradiciones
+                        antiguas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             KIOTO
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="kioto"
+            data-place-content="kioto"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kyoto%20Fushimi%20Inari%20Shrine.jpg"
+                    alt="Fushimi Inari, Kioto, Japón"
+                >
+
+                <span class="place-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    京都 — KYŌTO
+                </span>
+
+                <h2>
+                    Kioto
+                </h2>
+
+                <p class="place-lead">
+                    El corazón tradicional y cultural de Japón.
+                </p>
+
+
+                <p>
+                    Kioto fue durante siglos la capital imperial de Japón
+                    y se convirtió en uno de los principales centros
+                    culturales del país.
+                </p>
+
+                <p>
+                    La ciudad conserva una extraordinaria cantidad de
+                    templos, santuarios, jardines, casas tradicionales,
+                    barrios históricos y expresiones artísticas que permiten
+                    comprender la evolución de la cultura japonesa.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Fushimi Inari</h3>
+
+                        <p>
+                            Santuario sintoísta famoso por sus miles de
+                            puertas torii que forman senderos a través
+                            de la montaña.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Kinkaku-ji</h3>
+
+                        <p>
+                            El famoso Pabellón Dorado. Su arquitectura,
+                            estanque y jardines representan una de las
+                            imágenes más conocidas de Kioto.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Kiyomizu-dera</h3>
+
+                        <p>
+                            Uno de los templos más importantes de la ciudad,
+                            construido sobre una estructura de madera en
+                            una ladera.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Gion</h3>
+
+                        <p>
+                            Barrio histórico conocido por sus calles
+                            tradicionales, casas de té, restaurantes y
+                            la cultura de las geisha y maiko.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        Cultura de Kioto
+                    </h3>
+
+                    <p>
+                        Kioto está profundamente relacionada con la ceremonia
+                        del té, el kimono, la caligrafía, los jardines japoneses,
+                        la artesanía, el ikebana, la cocina kaiseki y numerosas
+                        expresiones de las artes tradicionales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             OSAKA
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="osaka"
+            data-place-content="osaka"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://photos.smugmug.com/Osaka/Osaka-Categories/i-f7XZKj7/0/L/First_Time_in_Osaka-L.jpg"
+                    alt="Dotonbori, Osaka, Japón"
+                >
+
+                <span class="place-number">
+                    03
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    大阪 — ŌSAKA
+                </span>
+
+                <h2>
+                    Osaka
+                </h2>
+
+                <p class="place-lead">
+                    Gastronomía, comercio y cultura urbana.
+                </p>
+
+
+                <p>
+                    Osaka posee una personalidad diferente a Tokio y Kioto.
+                    Es una ciudad conocida por su ambiente dinámico,
+                    su gastronomía, sus zonas comerciales y su entretenimiento.
+                </p>
+
+                <p>
+                    Históricamente Osaka tuvo una gran importancia comercial
+                    y se desarrolló como uno de los principales centros
+                    económicos de Japón.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Dotonbori</h3>
+
+                        <p>
+                            Una de las zonas más famosas de Osaka, conocida
+                            por sus enormes carteles, restaurantes, canales,
+                            tiendas y vida nocturna.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Osaka Castle</h3>
+
+                        <p>
+                            Importante monumento relacionado con Toyotomi
+                            Hideyoshi y con el proceso histórico de
+                            unificación de Japón.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Takoyaki</h3>
+
+                        <p>
+                            Pequeñas bolas de masa cocinadas con pulpo,
+                            uno de los alimentos callejeros más asociados
+                            con Osaka.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Okonomiyaki</h3>
+
+                        <p>
+                            Preparación salada elaborada con diferentes
+                            ingredientes, especialmente asociada con la
+                            cultura gastronómica de la ciudad.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        Cultura de Osaka
+                    </h3>
+
+                    <p>
+                        Osaka suele asociarse con una personalidad más
+                        directa y desenfadada. Su identidad está fuertemente
+                        relacionada con el comercio, la comida, el humor,
+                        el entretenimiento y la vida urbana.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             NARA
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="nara"
+            data-place-content="nara"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nara%20Park%20-%20Nara%2C%20Japan%20-%20DSC07485.jpg"
+                    alt="Nara Park, Nara, Japón"
+                >
+
+                <span class="place-number">
+                    04
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    奈良 — NARA
+                </span>
+
+                <h2>
+                    Nara
+                </h2>
+
+                <p class="place-lead">
+                    Historia, budismo y espiritualidad.
+                </p>
+
+
+                <p>
+                    Nara fue una de las primeras grandes capitales de Japón
+                    y tuvo un papel fundamental en la formación política,
+                    religiosa y artística del país.
+                </p>
+
+                <p>
+                    Sus templos, santuarios, esculturas y bosques permiten
+                    conocer una etapa fundamental del desarrollo temprano
+                    de la cultura japonesa.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Nara Park</h3>
+
+                        <p>
+                            Gran parque conocido por sus ciervos y por
+                            encontrarse rodeado de importantes templos,
+                            santuarios y espacios naturales.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Tōdai-ji</h3>
+
+                        <p>
+                            Uno de los templos budistas más importantes
+                            de Japón. Alberga una enorme estatua de Buda.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Kasuga Taisha</h3>
+
+                        <p>
+                            Importante santuario sintoísta rodeado por
+                            bosques y conocido por sus numerosas linternas.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Arte religioso</h3>
+
+                        <p>
+                            Nara fue un importante centro de desarrollo
+                            de la escultura, arquitectura y arte budista
+                            japonés.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        Cultura de Nara
+                    </h3>
+
+                    <p>
+                        Nara representa una de las raíces religiosas e
+                        históricas de Japón y permite comprender la relación
+                        entre budismo, sintoísmo, naturaleza y arte.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MONTE FUJI
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="fuji"
+            data-place-content="fuji"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/MountFuji.jpg"
+                    alt="Monte Fuji, Japón"
+                >
+
+                <span class="place-number">
+                    05
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    富士山 — FUJISAN
+                </span>
+
+                <h2>
+                    Monte Fuji
+                </h2>
+
+                <p class="place-lead">
+                    Naturaleza, espiritualidad y arte.
+                </p>
+
+
+                <p>
+                    Con 3.776 metros de altura, el Monte Fuji es la montaña
+                    más alta de Japón y uno de los símbolos más importantes
+                    de la identidad japonesa.
+                </p>
+
+                <p>
+                    Su importancia va mucho más allá del paisaje. Durante
+                    siglos fue considerada una montaña sagrada y se convirtió
+                    en fuente de inspiración para artistas, escritores y
+                    poetas.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Cinco Lagos</h3>
+
+                        <p>
+                            Una región formada por varios lagos desde los
+                            cuales pueden obtenerse algunas de las vistas
+                            más conocidas del Fuji.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Hakone</h3>
+
+                        <p>
+                            Región famosa por sus aguas termales, naturaleza,
+                            museos y vistas del Monte Fuji.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Espiritualidad</h3>
+
+                        <p>
+                            El Fuji estuvo relacionado históricamente con
+                            prácticas religiosas y peregrinaciones de
+                            montaña.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Arte</h3>
+
+                        <p>
+                            La montaña aparece en pinturas, grabados,
+                            poesía y literatura japonesa. Katsushika Hokusai
+                            la convirtió en un icono artístico mundial.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa el Fuji?
+                    </h3>
+
+                    <p>
+                        Representa la unión entre naturaleza, espiritualidad,
+                        identidad nacional y arte. Es uno de los símbolos
+                        visuales más poderosos de Japón.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HIROSHIMA
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="hiroshima"
+            data-place-content="hiroshima"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima%20Peace%20Memorial.jpg"
+                    alt="Memorial de la Paz de Hiroshima, Japón"
+                >
+
+                <span class="place-number">
+                    06
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    広島 — HIROSHIMA
+                </span>
+
+                <h2>
+                    Hiroshima
+                </h2>
+
+                <p class="place-lead">
+                    Memoria histórica y paz.
+                </p>
+
+
+                <p>
+                    Hiroshima ocupa un lugar único dentro de la historia
+                    contemporánea de Japón y del mundo. El 6 de agosto
+                    de 1945 la ciudad fue destruida por una bomba atómica.
+                </p>
+
+                <p>
+                    Después de la guerra, Hiroshima reconstruyó su vida
+                    y desarrolló una identidad internacional fuertemente
+                    relacionada con la memoria, la educación y la promoción
+                    de la paz.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Parque Memorial de la Paz</h3>
+
+                        <p>
+                            Espacio dedicado a recordar a las víctimas
+                            y transmitir un mensaje de paz.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Cúpula de la Bomba Atómica</h3>
+
+                        <p>
+                            Uno de los símbolos más importantes de Hiroshima
+                            y Patrimonio Mundial.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Museo de la Paz</h3>
+
+                        <p>
+                            Espacio educativo dedicado a explicar la
+                            historia del bombardeo y sus consecuencias.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Gastronomía</h3>
+
+                        <p>
+                            Hiroshima es conocida por su versión del
+                            okonomiyaki y por sus ostras y productos
+                            del mar.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa Hiroshima?
+                    </h3>
+
+                    <p>
+                        Hiroshima representa la memoria histórica y la
+                        transformación de una tragedia en un mensaje de
+                        paz dirigido a las futuras generaciones.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MIYAJIMA
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="miyajima"
+            data-place-content="miyajima"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Itsukushima%20Shinto%20Shrine.jpg"
+                    alt="Santuario Itsukushima, Miyajima, Japón"
+                >
+
+                <span class="place-number">
+                    07
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    宮島 — MIYAJIMA
+                </span>
+
+                <h2>
+                    Miyajima
+                </h2>
+
+                <p class="place-lead">
+                    La espiritualidad japonesa integrada con el mar.
+                </p>
+
+
+                <p>
+                    Miyajima es el nombre con el que popularmente se conoce
+                    a la isla de Itsukushima, situada frente a Hiroshima.
+                    Es uno de los paisajes más famosos de Japón.
+                </p>
+
+                <p>
+                    Su imagen más reconocible es el enorme torii del
+                    santuario Itsukushima, que parece flotar sobre el mar
+                    cuando la marea está alta.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Itsukushima Shrine</h3>
+
+                        <p>
+                            Santuario sintoísta reconocido como Patrimonio
+                            Mundial y estrechamente relacionado con el
+                            paisaje marítimo.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Gran Torii</h3>
+
+                        <p>
+                            Una de las imágenes más famosas de Japón.
+                            La estructura parece flotar sobre el agua
+                            durante la marea alta.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Monte Misen</h3>
+
+                        <p>
+                            Montaña de la isla desde la que se pueden
+                            contemplar el mar Interior de Seto y las
+                            islas cercanas.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Naturaleza</h3>
+
+                        <p>
+                            La isla combina bosques, montañas, mar,
+                            santuarios y ciervos, creando un paisaje
+                            profundamente ligado a la espiritualidad.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa Miyajima?
+                    </h3>
+
+                    <p>
+                        Representa la unión entre arquitectura, religión,
+                        agua, montaña y naturaleza, una característica
+                        fundamental de muchos paisajes tradicionales japoneses.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HOKKAIDO
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="hokkaido"
+            data-place-content="hokkaido"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Japan%2C%20Hokkaido%20landscape.jpg"
+                    alt="Paisaje de Hokkaido, Japón"
+                >
+
+                <span class="place-number">
+                    08
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    北海道 — HOKKAIDŌ
+                </span>
+
+                <h2>
+                    Hokkaido
+                </h2>
+
+                <p class="place-lead">
+                    Naturaleza, nieve y el Japón del norte.
+                </p>
+
+
+                <p>
+                    Hokkaido se encuentra en el extremo norte del
+                    archipiélago japonés y posee un paisaje y clima
+                    muy diferentes de los de las grandes ciudades del
+                    centro del país.
+                </p>
+
+                <p>
+                    La región es conocida por sus montañas, grandes
+                    espacios naturales, nieve, estaciones de esquí,
+                    aguas termales y una gastronomía basada en productos
+                    agrícolas y marinos.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Sapporo</h3>
+
+                        <p>
+                            Principal ciudad de Hokkaido y famosa por
+                            su Festival de la Nieve, gastronomía y
+                            arquitectura urbana.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Furano</h3>
+
+                        <p>
+                            Región rural conocida por sus campos de
+                            flores, especialmente durante la temporada
+                            de lavanda.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Shiretoko</h3>
+
+                        <p>
+                            Una de las zonas naturales más importantes
+                            de Japón y Patrimonio Natural Mundial.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Gastronomía</h3>
+
+                        <p>
+                            Hokkaido destaca por sus mariscos, cangrejo,
+                            salmón, erizo de mar, productos lácteos,
+                            agricultura y ramen.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa Hokkaido?
+                    </h3>
+
+                    <p>
+                        Representa el Japón de grandes espacios naturales,
+                        clima frío, agricultura, mar y paisajes abiertos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             OKINAWA
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="okinawa"
+            data-place-content="okinawa"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Naha%20Okinawa%20Japan%20Shuri-Castle-01.jpg"
+                    alt="Castillo de Shuri, Okinawa, Japón"
+                >
+
+                <span class="place-number">
+                    09
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    沖縄 — OKINAWA
+                </span>
+
+                <h2>
+                    Okinawa
+                </h2>
+
+                <p class="place-lead">
+                    El Japón tropical y la herencia del Reino de Ryukyu.
+                </p>
+
+
+                <p>
+                    Okinawa es una de las regiones culturalmente más
+                    particulares de Japón. Su clima tropical, sus playas,
+                    sus arrecifes de coral y su historia hacen que sea
+                    muy diferente de las regiones continentales.
+                </p>
+
+                <p>
+                    Durante siglos fue el centro del Reino de Ryukyu,
+                    una entidad política con una cultura propia y
+                    relaciones comerciales con diferentes regiones de Asia.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Reino de Ryukyu</h3>
+
+                        <p>
+                            Antigua entidad política que desarrolló una
+                            identidad cultural propia y mantuvo relaciones
+                            comerciales con Asia.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Castillo de Shuri</h3>
+
+                        <p>
+                            Uno de los símbolos históricos de Okinawa
+                            y antiguo centro político del Reino de Ryukyu.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Sanshin</h3>
+
+                        <p>
+                            Instrumento tradicional de tres cuerdas
+                            asociado a la música y cultura de Okinawa.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Gastronomía</h3>
+
+                        <p>
+                            Incluye ingredientes y platos particulares
+                            como goya, cerdo, tofu, soba de Okinawa,
+                            batata morada y awamori.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa Okinawa?
+                    </h3>
+
+                    <p>
+                        Okinawa demuestra la diversidad cultural de Japón
+                        y la existencia de tradiciones regionales con
+                        historias diferentes a las del Japón continental.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SHIRAKAWA-GO
+        ================================================== -->
+
+        <section
+            class="place-section"
+            id="shirakawa"
+            data-place-content="shirakawa"
+            hidden
+        >
+
+            <div class="place-image">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/85/Shirakawa-go_%E7%99%BD%E5%B7%9D%E6%9D%91_close_up.jpg"
+                    alt="Shirakawa-go, Japón"
+                >
+
+                <span class="place-number">
+                    10
+                </span>
+
+            </div>
+
+
+            <div class="place-content">
+
+                <span class="place-kicker">
+                    白川郷 — SHIRAKAWA-GŌ
+                </span>
+
+                <h2>
+                    Shirakawa-go
+                </h2>
+
+                <p class="place-lead">
+                    El Japón rural, tradicional y comunitario.
+                </p>
+
+
+                <p>
+                    Shirakawa-go se encuentra en una región montañosa
+                    de Gifu y es conocido por sus tradicionales casas
+                    de estilo gasshō-zukuri.
+                </p>
+
+                <p>
+                    Sus enormes techos de paja fueron diseñados para
+                    adaptarse a las fuertes nevadas de la región. La
+                    arquitectura representa la manera en que las
+                    comunidades japonesas históricas adaptaron sus
+                    viviendas a las condiciones naturales.
+                </p>
+
+
+                <div class="place-details">
+
+                    <article>
+                        <h3>Gasshō-zukuri</h3>
+
+                        <p>
+                            Casas tradicionales con grandes techos
+                            inclinados de paja diseñados para soportar
+                            la nieve.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Vida rural</h3>
+
+                        <p>
+                            El pueblo conserva la memoria de una forma
+                            de vida basada en la agricultura, artesanía
+                            y colaboración comunitaria.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Producción de seda</h3>
+
+                        <p>
+                            Históricamente algunas viviendas estuvieron
+                            relacionadas con el cultivo de moreras y
+                            producción de seda.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>Invierno</h3>
+
+                        <p>
+                            Durante la temporada de nieve el pueblo
+                            adquiere uno de los paisajes rurales más
+                            característicos de Japón.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="culture-box">
+
+                    <h3>
+                        ¿Qué representa Shirakawa-go?
+                    </h3>
+
+                    <p>
+                        Representa el Japón rural anterior a la enorme
+                        urbanización moderna y muestra cómo arquitectura,
+                        naturaleza y comunidad estaban profundamente
+                        relacionadas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer id="footer"></footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../components/components.js"></script>
+
+    <script src="sitios_cultura.js"></script>
+
+</body>
+
+</html>
